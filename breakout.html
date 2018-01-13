@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../breakout/main.css">
+	<script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+	<title>Breakout - XamPy</title>
+</head>
+<body>
+	<div class="GameArea" onclick="debutdujeu()">
+		<div id='brick'></div>
+		<div class="info">La partie commence !</div>
+		<div class="ball"></div>
+		<div class="menu">
+			<button class='boutonend' onclick="closemenu()">x</button>
+			<h1> Menu </h1>
+			<h4>Règles</h4>
+			<ul>
+				<li>Espace pour ouvrir le menu et Echap pour le fermer.</li>
+				<li>Un clique dans l'aire de jeu suffit pour commencer !</li>
+				<li>-5 points si la balle touche le bas de l'aire de jeu.</li>
+			</ul>
+			<button class='bouton' onclick="nouvellePartie()">Commencer nouvelle partie</button>
+			<button class='bouton' onclick="vitesseBalle()">Augmenter la vitesse</button>
+			<button class='bouton' onclick="changerLeTheme()">Changer le thème</button>
+			<button class='bouton' onclick="window.close()">Quitter le jeu</button>
+			<p> Note du developpeur : Meilleure expérience en 144Hz. </p>
+			<h5>Codé par Maxence P.</h2>
+		</div>
+		<div class="loose">Vous avez perdu !</div>
+	</div>
+	<div class='vies'> </div>	
+    <button class='bouttonmenu' onclick="menu()">Menu</button>
+    <div class='score'>
+    	<h2>Score :</h2>
+    	<h3>3 vies restantes</h3>
+    </div>
+
+<script type="text/javascript" src="../breakout/code.js"></script>
+</body>
+</html>
